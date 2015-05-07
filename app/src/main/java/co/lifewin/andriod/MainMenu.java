@@ -1,5 +1,6 @@
 package co.lifewin.andriod;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
@@ -7,22 +8,28 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.TextView;
 
 
-public class MainMenu extends ActionBarActivity {
+public class MainMenu extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        SharedPreferences settings = getSharedPreferences(Constants.UserSettings.UserSettingsRoot, MODE_PRIVATE);
-        setupUserView(settings);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
     }
 
-    private void setupUserView(SharedPreferences userSettings)
+    @Override
+    public void onResume() {
+        super.onResume();
+        setupUserView();
+    }
+
+    private void setupUserView()
     {
-        String userName = userSettings.getString(Constants.UserSettings.UserNameKey, "Enter a name:");
+        SharedPreferences userSettings = getSharedPreferences(Constants.UserSettings.UserSettingsRoot, MODE_PRIVATE);
+        String userName = userSettings.getString(Constants.UserSettings.UserNameKey, "");
         TextView userNameDisplay = (TextView) findViewById(R.id.user_name);
         userNameDisplay.setText(userName);
     }
@@ -35,6 +42,7 @@ public class MainMenu extends ActionBarActivity {
 
     public void goToEditNameActivity(View view) {
         Intent intent = new Intent(this, EditUserInfoPage.class);
+        startActivity(intent);
     }
 
     @Override

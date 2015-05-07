@@ -1,5 +1,6 @@
 package co.lifewin.andriod;
 
+import android.app.Activity;
 import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -10,36 +11,39 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class EditUserInfoPage extends ActionBarActivity {
+public class EditUserInfoPage extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        EditText userNameInputField = (EditText)findViewById(R.id.user_name_input);
         super.onCreate(savedInstanceState);
-        SharedPreferences settings = getSharedPreferences(Constants.UserSettings.UserSettingsRoot, MODE_PRIVATE);
-        setupUserView(settings);
         setContentView(R.layout.activity_edit_user_info_page);
     }
 
-    private void setupUserView(SharedPreferences userSettings)
+    private void setupUserView()
     {
-        String userName = userSettings.getString(Constants.UserSettings.UserSettingsRoot, "Enter a name:");
+        SharedPreferences userSettings = getSharedPreferences(Constants.UserSettings.UserSettingsRoot, MODE_PRIVATE);
+        String userName = userSettings.getString(Constants.UserSettings.UserNameKey, "");
         EditText userNameDisplay = (EditText) findViewById(R.id.user_name_input);
         userNameDisplay.setText(userName);
-        userNameDisplay.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus)
-                    saveContents(Constants.UserSettings.UserNameKey, v);
-            }
-        });
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        setupUserView();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        saveContents(Constants.UserSettings.UserNameKey, findViewById(R.id.user_name_input));
     }
 
     private void saveContents(String settingKey, View textBox)
     {
         SharedPreferences settings = getSharedPreferences(Constants.UserSettings.UserSettingsRoot, MODE_PRIVATE);
-        String newValue = String.valueOf(((EditText)textBox).getText());
-        settings.edit().putString(settingKey, newValue);
+        String newValue = ((EditText)textBox).getText().toString();
+        settings.edit().putString(settingKey, newValue).commit();
 
     }
 
