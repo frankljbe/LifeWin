@@ -27,6 +27,7 @@
             android:layout_width="fill_parent"
             android:gravity="start"
             android:layout_height="wrap_content"
+            android:onClick="goToGoalsActivity"
             android:text="@string/naivation_goals"
             android:textColor="@color/white_color"/>
         <Button android:id="@+id/tasks_navigation_button"
@@ -69,6 +70,7 @@
         android:layout_weight="1"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:background="@android:color/transparent"
         android:orientation="vertical" >
     </LinearLayout>
 </LinearLayout>

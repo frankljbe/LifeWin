@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/lifewinorange_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:orientation="horizontal" >
+        <!--JF 5/10/15 The image a stand in we need a better version of teh three line menu icon looks bad-->
+        <ImageButton
+            android:layout_width="@dimen/activity_title_height"
+            android:layout_height="@dimen/activity_title_height"
+            android:src="@drawable/three_lines"
+            android:onClick="goToMainMenu"
+            android:gravity="start"/>
+        <!--JF 5/10/15 This View is a hack to get the proper spacing between elements in the title bar. Is there a better way?-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/activity_title_text_size"
+            android:text="@string/title_activity_main_goals"/>
+        <!--JF 5/10/15 This View is a hack to get the proper spacing between elements in the title bar. Is there a better way?-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/activity_title_text_size"
+            android:text="10/10"/>
+    </LinearLayout>
+</LinearLayout>
