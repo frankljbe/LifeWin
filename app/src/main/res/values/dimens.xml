@@ -3,6 +3,10 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <!-- this needs to be non static based on the DPI -->
-    <dimen name="activity_title_height">32dp</dimen>
-    <dimen name="activity_title_text_size">24dp</dimen>
+    <dimen name="activity_bar_height">32dp</dimen>
+    <dimen name="activity_bar_text_size">24dp</dimen>
+    <dimen name="activity_bar_margin">8dp</dimen>
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
 </resources>

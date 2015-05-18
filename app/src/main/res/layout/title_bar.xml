@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lifewinblue_light"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_bar_height"
+    android:orientation="horizontal" >
+    <!--JF 5/10/15 The image a stand in we need a better version of teh three line menu icon looks bad-->
+    <ImageButton
+        android:layout_width="@dimen/activity_bar_height"
+        android:layout_height="@dimen/activity_bar_height"
+        android:src="@drawable/three_lines"
+        android:onClick="goToMainMenu"
+        android:gravity="start"/>
+    <!--JF 5/10/15 This View is a hack to get the proper spacing between elements in the title bar. Is there a better way?-->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/activity_bar_margin"
+        android:paddingLeft="@dimen/activity_bar_margin"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/activity_bar_text_size"
+        android:background="@color/lifewinblue_dark"
+    <!--Overwrite this in each activites create method with the actiivty title-->
+        android:text="@string/title_activity_need_to_load"/>
+    <!--JF 5/10/15 This View is a hack to get the proper spacing between elements in the title bar. Is there a better way?-->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:gravity="end"
+        android:textColor="@color/white_color"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/activity_bar_text_size"
+        android:text="10/10"/>
+</LinearLayout>

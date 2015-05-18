@@ -2,4 +2,6 @@
 <resources>
     <color name="lifewinorange_color">#f37a5d</color>
 	<color name="white_color">#ffffff</color>
+    <color name="lifewinblue_light">#1b666b</color>
+    <color name="lifewinblue_dark">#12474b</color>
 </resources>
