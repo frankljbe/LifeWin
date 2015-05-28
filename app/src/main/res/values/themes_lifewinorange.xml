@@ -11,7 +11,9 @@
 
     <item name="android:buttonStyle">@style/ButtonlifeWinOrange</item>
 
-    <item name="android:imageButtonStyle">@style/ImageButtonlifeWinOrange</item>
+    <item name="android:listViewStyle">@style/LifeWinListView</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonLifeWinOrange</item>
 
   </style>
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/left_drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="240dp"
+    android:layout_gravity="start"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/life_win_logo"
+        android:src="@drawable/life_win_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="@color/lifewinblue_dark"
+        android:entries="@array/navigation_options"
+        android:dividerHeight="1dp"
+        android:background="@color/lifewinblue_light"/>
+</LinearLayout>

@@ -5,10 +5,19 @@
 
   <style name="ButtonlifeWinOrange" parent="android:Widget.Holo.Light.Button">
 	  <item name="android:background">@drawable/lifewinorange_btn_default_holo_light</item>
+      <item name="android:textColor">@color/white_color</item>
   </style>
 
-  <style name="ImageButtonlifeWinOrange" parent="android:Widget.Holo.Light.ImageButton">
+  <style name="ImageButtonLifeWinOrange" parent="android:Widget.Holo.Light.ImageButton">
 	  <item name="android:background">@drawable/lifewinorange_btn_default_holo_light</item>
+      <item name="android:textColor">@color/white_color</item>
+  </style>
+
+  <style name="LifeWinListView" parent="@android:style/Widget.ListView">
+    <item name="android:textColor">@color/white_color</item>
+    <item name="android:background">@color/lifewinblue_light</item>
+    <item name="android:divider">@color/lifewinblue_dark</item>
+    <item name="android:dividerHeight">1dp</item>
   </style>
 
 </resources>

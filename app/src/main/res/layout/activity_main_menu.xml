@@ -36,6 +36,7 @@
             android:gravity="start"
             android:layout_height="wrap_content"
             android:text="@string/naivation_tasks"
+            android:onClick="goToTasksActivity"
             android:textColor="@color/white_color"/>
         <Button android:id="@+id/habits_navigation_button"
             android:textSize="@dimen/abc_text_size_headline_material"

@@ -27,8 +27,8 @@
         android:textColor="@color/white_color"
         android:textSize="@dimen/activity_bar_text_size"
         android:background="@color/lifewinblue_dark"
-    <!--Overwrite this in each activites create method with the actiivty title-->
         android:text="@string/title_activity_need_to_load"/>
+    <!--Overwrite text in each activites create method with the actiivty title-->
     <!--JF 5/10/15 This View is a hack to get the proper spacing between elements in the title bar. Is there a better way?-->
     <View
         android:layout_width="0dp"

@@ -50,6 +50,10 @@ public class MainMenu extends Activity {
         startActivity(intent);
     }
 
+    public void goToTasksActivity(View view) {
+
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will

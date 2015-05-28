@@ -21,6 +21,13 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <string-array name="navigation_options">
+        <item>Goals</item>
+        <item>Tasks</item>
+        <item>Habits</item>
+        <item>Yes! I did it!</item>
+        <item>Help</item>
+        <item>Settings</item>
+    </string-array>
     <string name="action_example">Example action</string>
 </resources>
