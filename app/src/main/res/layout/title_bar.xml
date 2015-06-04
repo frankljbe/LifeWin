@@ -10,7 +10,7 @@
         android:layout_width="@dimen/activity_bar_height"
         android:layout_height="@dimen/activity_bar_height"
         android:src="@drawable/three_lines"
-        android:onClick="goToMainMenu"
+        android:onClick="toggleNavigationDrawer"
         android:gravity="start"/>
     <!--JF 5/10/15 This View is a hack to get the proper spacing between elements in the title bar. Is there a better way?-->
     <View
@@ -19,6 +19,7 @@
         android:layout_weight="1"
         />
     <TextView
+        android:id="@+id/page_title"
         android:gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -11,6 +11,7 @@ public class MainHabits extends IActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_habits);
         super.loadDrawer();
+        super.setTitle(R.string.title_activity_main_habits);
     }
 
     @Override

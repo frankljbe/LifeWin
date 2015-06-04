@@ -11,6 +11,7 @@ public class MainTasks extends IActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_tasks);
         super.loadDrawer();
+        super.setTitle(R.string.title_activity_main_tasks);
     }
 
     @Override

@@ -11,6 +11,7 @@ public class MainHelp extends IActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_help);
         super.loadDrawer();
+        super.setTitle(R.string.title_activity_main_help);
     }
 
     @Override

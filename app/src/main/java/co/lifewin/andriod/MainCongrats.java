@@ -11,6 +11,7 @@ public class MainCongrats extends IActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_congrats);
         super.loadDrawer();
+        super.setTitle(R.string.title_activity_main_congrats);
     }
 
     @Override

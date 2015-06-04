@@ -25,9 +25,14 @@
         <item>Goals</item>
         <item>Tasks</item>
         <item>Habits</item>
-        <item>Yes! I did it!</item>
+        <item>Congrats</item>
         <item>Help</item>
         <item>Settings</item>
     </string-array>
     <string name="action_example">Example action</string>
+    <string name="title_activity_main_congrats">Congrats</string>
+    <string name="title_activity_main_tasks">Tasks</string>
+    <string name="title_activity_main_habits">Habits</string>
+    <string name="title_activity_main_help">Help</string>
+    <string name="title_activity_main_settings">Settings</string>
 </resources>

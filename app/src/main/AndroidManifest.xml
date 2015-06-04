@@ -27,10 +27,50 @@
         <activity
             android:name=".MainGoals"
             android:label="@string/title_activity_main_goals"
-            android:parentActivityName=".MainMenu" >
+            android:parentActivityName=".IActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="co.lifewin.andriod.MainMenu" />
+        </activity>
+        <activity
+            android:name=".MainTasks"
+            android:label="@string/title_activity_main_tasks"
+            android:parentActivityName=".IActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.lifewin.andriod.MainTasks" />
+        </activity>
+        <activity
+            android:name=".MainCongrats"
+            android:label="@string/title_activity_main_congrats"
+            android:parentActivityName=".IActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.lifewin.andriod.MainCongrats" />
+        </activity>
+        <activity
+            android:name=".MainHabits"
+            android:label="@string/title_activity_main_habits"
+            android:parentActivityName=".IActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.lifewin.andriod.MainHabits" />
+        </activity>
+        <activity
+            android:name=".MainHelp"
+            android:label="@string/title_activity_main_help"
+            android:parentActivityName=".IActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.lifewin.andriod.MainHelp" />
+        </activity>
+        <activity
+            android:name=".MainSettings"
+            android:label="@string/title_activity_main_settings"
+            android:parentActivityName=".IActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.lifewin.andriod.MainSettings" />
         </activity>
     </application>
 
